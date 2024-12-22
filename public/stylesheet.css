@@ -1,0 +1,76 @@
+:root {
+    color-scheme: light dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+/* Side navigation links */
+.sidenav a {
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Style the content */
+.content {
+    margin-left: 200px;
+    padding-left: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .sidenav {
+        background: rgb(43, 43, 43);
+        color: rgb(255, 255, 255);
+    }
+
+    .sidenav a {
+        color: rgb(255, 255, 255);
+    }
+
+    .sidenav a:hover {
+        background-color: rgb(77, 77, 77);
+    }
+
+    body {
+        background: rgb(30, 30, 30);
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .sidenav {
+        background: rgb(242, 242, 242);
+        color: rgb(0, 0, 0);
+    }
+
+    .sidenav a {
+        color: rgb(0, 0, 0);
+    }
+
+    .sidenav a:hover {
+        background-color: rgb(221, 221, 221);
+    }
+
+    body {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+}
