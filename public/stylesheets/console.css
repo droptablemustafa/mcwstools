@@ -1,0 +1,14 @@
+.console-output {
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow-y: scroll;
+    max-height: calc(100vh - 80px);
+}
+
+#console-input {
+    font-family: monospace;
+    position: absolute;
+    width: calc(100% - 240px);
+    height: 20px;
+    bottom: 20px;
+}

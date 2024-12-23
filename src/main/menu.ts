@@ -6,22 +6,22 @@ const menuTemplate = [
     // { role: 'appMenu' }
     ...(isMac
         ? [
-            {
-                label: app.name,
-                submenu: [
-                    { role: "about" },
-                    { type: "separator" },
-                    { role: "services" },
-                    { type: "separator" },
-                    { role: "hide" },
-                    { role: "hideOthers" },
-                    { role: "unhide" },
-                    { type: "separator" },
-                    { role: "quit" },
-                ],
-            },
-        ]
-    : []),
+              {
+                  label: app.name,
+                  submenu: [
+                      { role: "about" },
+                      { type: "separator" },
+                      { role: "services" },
+                      { type: "separator" },
+                      { role: "hide" },
+                      { role: "hideOthers" },
+                      { role: "unhide" },
+                      { type: "separator" },
+                      { role: "quit" },
+                  ],
+              },
+          ]
+        : []),
     // { role: 'fileMenu' }
     {
         label: "File",
@@ -39,24 +39,23 @@ const menuTemplate = [
             { role: "paste" },
             ...(isMac
                 ? [
-                    { role: "pasteAndMatchStyle" },
-                    { role: "delete" },
-                    { role: "selectAll" },
-                    { type: "separator" },
-                    {
-                        label: "Speech",
-                        submenu: [
-                            { role: "startSpeaking" },
-                            { role: "stopSpeaking" },
-                        ],
-                    },
-                ]
+                      { role: "pasteAndMatchStyle" },
+                      { role: "delete" },
+                      { role: "selectAll" },
+                      { type: "separator" },
+                      {
+                          label: "Speech",
+                          submenu: [
+                              { role: "startSpeaking" },
+                              { role: "stopSpeaking" },
+                          ],
+                      },
+                  ]
                 : [
-                    { role: "delete" },
-                    { type: "separator" },
-                    { role: "selectAll" },
-                ]
-            ),
+                      { role: "delete" },
+                      { type: "separator" },
+                      { role: "selectAll" },
+                  ]),
         ],
     },
     // { role: 'viewMenu' }
@@ -82,13 +81,12 @@ const menuTemplate = [
             { role: "zoom" },
             ...(isMac
                 ? [
-                    { type: "separator" },
-                    { role: "front" },
-                    { type: "separator" },
-                    { role: "window" },
-                ]
-                : [{ role: "close" }]
-            ),
+                      { type: "separator" },
+                      { role: "front" },
+                      { type: "separator" },
+                      { role: "window" },
+                  ]
+                : [{ role: "close" }]),
         ],
     },
     {
@@ -97,7 +95,9 @@ const menuTemplate = [
             {
                 label: "GitHub Repository",
                 click: async () => {
-                    await shell.openExternal("https://github.com/droptablemustafa/mcwstools");
+                    await shell.openExternal(
+                        "https://github.com/droptablemustafa/mcwstools"
+                    );
                 },
             },
         ],

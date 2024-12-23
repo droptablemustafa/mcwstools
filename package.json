@@ -6,7 +6,8 @@
   "main": "build/main/app.js",
   "scripts": {
     "start": "electron .",
-    "build": "tsc"
+    "build": "tsc",
+    "prettier": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -19,14 +20,14 @@
   },
   "homepage": "https://github.com/droptablemustafa/mcwstools#readme",
   "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.5.13",
     "electron": "^33.2.1",
     "prettier": "3.4.2",
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@types/node": "^22.10.2",
-    "@types/uuid": "^10.0.0",
-    "@types/ws": "^8.5.13",
     "uuid": "^11.0.3",
     "ws": "^8.18.0"
   }
